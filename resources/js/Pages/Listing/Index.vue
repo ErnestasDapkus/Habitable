@@ -1,5 +1,5 @@
 <template>
-  <div v-for="listing in listings" :key="listing.id">
+  <Box v-for="listing in listings" :key="listing.id">
     <div>
       <Link :href="route('listing.show', listing.id)">
         <ListingAddress :listing="listing" />
@@ -11,7 +11,7 @@
     <div>
       <Link :href="route('listing.destroy', listing.id)" as="button" method="DELETE">Delete</Link>
     </div>
-  </div>
+  </Box>
 </template>
 
 <script setup>
@@ -19,6 +19,8 @@
 import ListingAddress from '@/Components/ListingAddress.vue'
 
 import { Link } from '@inertiajs/vue3'
+import Box from '@/Components/UI/Box.vue'
+
 
 
 

@@ -75,6 +75,7 @@
 <script setup>
 import { useForm } from '@inertiajs/vue3'
 
+
 const props = defineProps({
   listing: Object,
 })
@@ -97,12 +98,3 @@ function update() {
 
 </script>
 
-<style scoped>
-label {
-    margin-right: 2em;
-}
-  
-div {
-    padding: 2px
-}
-</style>
