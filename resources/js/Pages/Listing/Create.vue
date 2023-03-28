@@ -88,7 +88,7 @@ const form = useForm({
 
 
 function create() {
-  return form.post('/listing')
+  return form.post(route('listing.store'))
 }
 
 </script>
