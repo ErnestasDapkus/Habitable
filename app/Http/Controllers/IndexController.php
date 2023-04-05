@@ -1,20 +1,23 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\Auth;
 
-use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
     public function index()
     {
+
+        // dd(Auth::user());
+
         return inertia(
             'Index/Index',
-        [
-            'message' => 'Hello from Laravel!'
-            
-        ]
-    );
+            [
+                'message' => 'Hello from Laravel!',
+
+            ]
+        );
 
     }
 
